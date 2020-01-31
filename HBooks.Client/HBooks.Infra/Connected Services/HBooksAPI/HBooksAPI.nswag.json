@@ -35,6 +35,11 @@
           "Books"
         ],
         "operationId": "ApiV{versionBooksGetByIdGet",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "parameters": [
           {
             "type": "number",
@@ -45,7 +50,10 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/BookObject"
+            }
           }
         }
       }

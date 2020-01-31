@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.WebClient\\HBooks.WebClient.csproj": {}
+    "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.WebClient\\HBooks.WebClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.Domain\\HBooks.Domain.csproj": {
+    "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.Domain\\HBooks.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.Domain\\HBooks.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.Domain\\HBooks.Domain.csproj",
         "projectName": "HBooks.Domain",
-        "projectPath": "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.Domain\\HBooks.Domain.csproj",
+        "projectPath": "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.Domain\\HBooks.Domain.csproj",
         "packagesPath": "C:\\Users\\MAIS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.Domain\\obj\\",
+        "outputPath": "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -70,14 +70,14 @@
         }
       }
     },
-    "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.Infra\\HBooks.Infra.csproj": {
+    "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.Infra\\HBooks.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.Infra\\HBooks.Infra.csproj",
+        "projectUniqueName": "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.Infra\\HBooks.Infra.csproj",
         "projectName": "HBooks.Infra",
-        "projectPath": "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.Infra\\HBooks.Infra.csproj",
+        "projectPath": "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.Infra\\HBooks.Infra.csproj",
         "packagesPath": "C:\\Users\\MAIS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.Infra\\obj\\",
+        "outputPath": "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -100,8 +100,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.Domain\\HBooks.Domain.csproj": {
-                "projectPath": "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.Domain\\HBooks.Domain.csproj"
+              "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.Domain\\HBooks.Domain.csproj": {
+                "projectPath": "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.Domain\\HBooks.Domain.csproj"
               }
             }
           }
@@ -152,14 +152,14 @@
         }
       }
     },
-    "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.WebClient\\HBooks.WebClient.csproj": {
+    "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.WebClient\\HBooks.WebClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.WebClient\\HBooks.WebClient.csproj",
+        "projectUniqueName": "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.WebClient\\HBooks.WebClient.csproj",
         "projectName": "HBooks.WebClient",
-        "projectPath": "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.WebClient\\HBooks.WebClient.csproj",
+        "projectPath": "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.WebClient\\HBooks.WebClient.csproj",
         "packagesPath": "C:\\Users\\MAIS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.WebClient\\obj\\",
+        "outputPath": "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.WebClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -182,11 +182,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.Domain\\HBooks.Domain.csproj": {
-                "projectPath": "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.Domain\\HBooks.Domain.csproj"
+              "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.Domain\\HBooks.Domain.csproj": {
+                "projectPath": "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.Domain\\HBooks.Domain.csproj"
               },
-              "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.Infra\\HBooks.Infra.csproj": {
-                "projectPath": "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.Infra\\HBooks.Infra.csproj"
+              "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.Infra\\HBooks.Infra.csproj": {
+                "projectPath": "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.Infra\\HBooks.Infra.csproj"
               }
             }
           }

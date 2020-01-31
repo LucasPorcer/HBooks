@@ -117,7 +117,7 @@ namespace HBooks.Infra.HBooksAPI
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task ApiV1BooksGetbyidAsync(double? bookId)
+        public System.Threading.Tasks.Task<BookObject> ApiV1BooksGetbyidAsync(double? bookId)
         {
             return ApiV1BooksGetbyidAsync(bookId, System.Threading.CancellationToken.None);
         }
@@ -125,7 +125,7 @@ namespace HBooks.Infra.HBooksAPI
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task ApiV1BooksGetbyidAsync(double? bookId, System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<BookObject> ApiV1BooksGetbyidAsync(double? bookId, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/books/GetById?");
@@ -141,6 +141,7 @@ namespace HBooks.Infra.HBooksAPI
                 using (var request_ = new System.Net.Http.HttpRequestMessage())
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
     
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
@@ -162,7 +163,8 @@ namespace HBooks.Infra.HBooksAPI
                         var status_ = ((int)response_.StatusCode).ToString();
                         if (status_ == "200") 
                         {
-                            return;
+                            var objectResponse_ = await ReadObjectResponseAsync<BookObject>(response_, headers_).ConfigureAwait(false);
+                            return objectResponse_.Object;
                         }
                         else
                         if (status_ != "200" && status_ != "204")
@@ -170,6 +172,8 @@ namespace HBooks.Infra.HBooksAPI
                             var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false); 
                             throw new ApiException("The HTTP status code of the response was not expected (" + (int)response_.StatusCode + ").", (int)response_.StatusCode, responseData_, headers_, null);
                         }
+            
+                        return default(BookObject);
                     }
                     finally
                     {

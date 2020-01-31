@@ -44,38 +44,33 @@ namespace HBooks.WebClient.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult Edit(decimal id)
+        public IActionResult Edit(int id)
         {
-            var objToUpdate = _service.GetById(id);
-
-            return View(objToUpdate);
+            return View(_service.GetById(id));
         }
 
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit([Bind("Id,Name,Name,ShortDescription,Genre,Qty,QtyRented")] BookObject obj)
+        public async Task<IActionResult> Edit([Bind("Id,Name,Name,ShortDescription,Genre,Qty,QtyRented")] BookObject obj)
         {
             if (ModelState.IsValid)
             {
                 _service.UpdateBookData(obj);
             }
 
-            return RedirectToAction("Index");
+            return RedirectToAction(nameof(Index));
         }
 
 
-        public IActionResult Delete(int? id)
+        public IActionResult Delete(int id)
         {
             var objToDelete = _service.GetById((decimal)id);
 
             _service.Delete(objToDelete);
 
-            return RedirectToAction("Index");
+            return RedirectToAction(nameof(Index));
         }
-
-
-        protected override void Dispose(bool disposing) { }
 
     }
 }

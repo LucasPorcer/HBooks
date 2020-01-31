@@ -9,3 +9,14 @@ C:\Users\MAIS\Documents\TesteHbsis\HBooks.Infra\bin\Debug\netcoreapp2.2\HBooks.D
 C:\Users\MAIS\Documents\TesteHbsis\HBooks.Infra\obj\Debug\netcoreapp2.2\HBooks.Infra.csproj.CopyComplete
 C:\Users\MAIS\Documents\TesteHbsis\HBooks.Infra\obj\Debug\netcoreapp2.2\HBooks.Infra.dll
 C:\Users\MAIS\Documents\TesteHbsis\HBooks.Infra\obj\Debug\netcoreapp2.2\HBooks.Infra.pdb
+C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Infra\bin\Debug\netcoreapp2.2\HBooks.Infra.deps.json
+C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Infra\bin\Debug\netcoreapp2.2\HBooks.Infra.dll
+C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Infra\bin\Debug\netcoreapp2.2\HBooks.Infra.pdb
+C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Infra\bin\Debug\netcoreapp2.2\HBooks.Domain.dll
+C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Infra\bin\Debug\netcoreapp2.2\HBooks.Domain.pdb
+C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Infra\obj\Debug\netcoreapp2.2\HBooks.Infra.csprojAssemblyReference.cache
+C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Infra\obj\Debug\netcoreapp2.2\HBooks.Infra.AssemblyInfoInputs.cache
+C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Infra\obj\Debug\netcoreapp2.2\HBooks.Infra.AssemblyInfo.cs
+C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Infra\obj\Debug\netcoreapp2.2\HBooks.Infra.csproj.CopyComplete
+C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Infra\obj\Debug\netcoreapp2.2\HBooks.Infra.dll
+C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Infra\obj\Debug\netcoreapp2.2\HBooks.Infra.pdb

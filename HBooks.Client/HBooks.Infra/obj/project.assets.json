@@ -3811,11 +3811,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.Client\\HBooks.Infra\\HBooks.Infra.csproj",
+      "projectUniqueName": "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.Infra\\HBooks.Infra.csproj",
       "projectName": "HBooks.Infra",
-      "projectPath": "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.Client\\HBooks.Infra\\HBooks.Infra.csproj",
+      "projectPath": "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.Infra\\HBooks.Infra.csproj",
       "packagesPath": "C:\\Users\\MAIS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.Client\\HBooks.Infra\\obj\\",
+      "outputPath": "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -3838,8 +3838,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.Client\\HBooks.Domain\\HBooks.Domain.csproj": {
-              "projectPath": "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.Client\\HBooks.Domain\\HBooks.Domain.csproj"
+            "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.Domain\\HBooks.Domain.csproj": {
+              "projectPath": "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.Domain\\HBooks.Domain.csproj"
             }
           }
         }

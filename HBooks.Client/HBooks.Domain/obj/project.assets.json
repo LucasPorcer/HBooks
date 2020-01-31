@@ -734,11 +734,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.Client\\HBooks.Domain\\HBooks.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.Domain\\HBooks.Domain.csproj",
       "projectName": "HBooks.Domain",
-      "projectPath": "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.Client\\HBooks.Domain\\HBooks.Domain.csproj",
+      "projectPath": "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.Domain\\HBooks.Domain.csproj",
       "packagesPath": "C:\\Users\\MAIS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MAIS\\Documents\\TesteHbsis\\HBooks.Client\\HBooks.Domain\\obj\\",
+      "outputPath": "C:\\Users\\MAIS\\Documents\\HBooks\\HBooks.Client\\HBooks.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

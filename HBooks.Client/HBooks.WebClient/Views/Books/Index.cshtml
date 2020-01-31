@@ -2,63 +2,91 @@
 
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "HBook";
 }
 
-<p>
 
-</p>
-<table class="table table-bordered">
+
+<script>
+    $(document).ready(function () {
+        $("#txtSearch").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#booksGrid tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
+
+<div class="text-center">
+    <h1 class="display-4">Inventário de Livros</h1>
+</div>
+
+
+<div class="row">
+    <p>Digite abaixo qualquer valor para filtrar os livros:</p>
+</div>
+
+<div class="row">
+    <input class="form-control" id="txtSearch" type="text" placeholder="Pesquisar..">
+</div>
+
+
+
+<table class="table mt-5 table-bordered table-striped mb-0" width="100%">
     <thead>
         <tr>
-            <th scope="col">
+            <th scope="col" class="th-sm">
                 @Html.DisplayNameFor(model => model.Name)
             </th>
-            <th scope="col">
+            <th scope="col" class="th-sm">
                 @Html.DisplayNameFor(model => model.ShortDescription)
             </th>
-            <th scope="col">
+            <th scope="col" class="th-sm">
                 @Html.DisplayNameFor(model => model.Genre)
             </th>
-            <th scope="col">
+            <th scope="col" class="th-sm">
                 @Html.DisplayNameFor(model => model.Qty)
             </th>
-            <th scope="col">
+            <th scope="col" class="th-sm">
                 @Html.DisplayNameFor(model => model.QtyRented)
             </th>
 
-            <th scope="col">
+            <th scope="col" class="th-sm text-center">
                 @Html.ActionLink("Adicionar", "Create", null, new { @class = "btn btn-primary" })
-                @*<a asp-action="Edit" asp-route-id="1">Oi</a>*@
+            </th>
+            <th scope="col" class="th-sm">
             </th>
         </tr>
     </thead>
-    <tbody>
+    <tbody id="booksGrid">
 
         @if (Model != null)
         {
             foreach (var item in Model.Items)
             {
                 <tr>
-                    <td>
+                    <td class="text-center">
                         @Html.DisplayFor(modelItem => item.Name)
                     </td>
-                    <td>
+                    <td class="text-center">
                         @Html.DisplayNameFor(model => model.ShortDescription)
                     </td>
-                    <td>
+                    <td class="text-center">
                         @Html.DisplayNameFor(model => model.Genre)
                     </td>
-                    <td>
+                    <td class="text-center">
                         @Html.DisplayNameFor(model => model.Qty)
                     </td>
-                    <td>
+                    <td class="text-center">
                         @Html.DisplayNameFor(model => model.QtyRented)
                     </td>
 
-                    <td>
-                        <a href="@Url.Action("Delete", "Users", new { id = item.Id })" class="settings" title="Settings" data-toggle="tooltip" onClick="return confirm('Deseja Deletar este livro?');">Deletar</a>
-                        @Html.ActionLink("Editar", "Edit", new { id = item.Id })
+                    <td class="text-center">
+                        <a asp-action="Edit" asp-route-id="@item.Id"><i class="fas fa-edit fa-lg" title="Editar"></i></a>
+                    </td>
+                    <td class="text-center">
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="text-danger ml-1" onclick="return confirm('Confirmar exclusão?')"><i class="fa fa-eraser fa-lg" title="Excluir Livro"></i></a>
                     </td>
                 </tr>
             }

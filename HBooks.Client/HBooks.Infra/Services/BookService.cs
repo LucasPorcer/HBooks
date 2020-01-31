@@ -49,7 +49,7 @@ namespace HBooks.Infra.Services
             var call = _api.ApiV1BooksGetbyidAsync(Convert.ToDouble(bookId));
             call.Wait();
 
-            BookObject resultObj = _mapper.Map<BookObject>(call);
+            BookObject resultObj = _mapper.Map<BookObject>(call.Result);
 
             return resultObj;
         }
