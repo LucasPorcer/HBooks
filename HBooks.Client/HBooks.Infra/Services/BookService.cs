@@ -56,7 +56,9 @@ namespace HBooks.Infra.Services
 
         public ResponseObject InsertBook(BookObject obj)
         {
-            var call = _api.ApiV1BooksInserbookAsync(new HBooksAPI.BookObject() { Genre = obj.Genre, Id = (double)obj.Id, Name = obj.Name, Qty = obj.Qty, QtyRented = obj.QtyRented, RentalPrice = obj.QtyRented, ShortDescription = obj.ShortDescription });
+            var id = Convert.ToDecimal(DateTime.Now.ToString("yyyyMMddHHmmss"));
+
+            var call = _api.ApiV1BooksInserbookAsync(new HBooksAPI.BookObject() { Genre = obj.Genre, Id = (double)id, Name = obj.Name, Qty = obj.Qty, QtyRented = obj.QtyRented, RentalPrice = obj.QtyRented, ShortDescription = obj.ShortDescription });
             call.Wait();
 
             ResponseObject resultObj = _mapper.Map<ResponseObject>(call.Result);

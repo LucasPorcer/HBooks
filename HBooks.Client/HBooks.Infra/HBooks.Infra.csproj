@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HBooks.CrossCutting\HBooks.CrossCutting.csproj" />
     <ProjectReference Include="..\HBooks.Domain\HBooks.Domain.csproj" />
   </ItemGroup>
 

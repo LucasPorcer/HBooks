@@ -16,6 +16,7 @@
             });
         });
     });
+
 </script>
 
 <div class="text-center">
@@ -33,7 +34,7 @@
 
 
 
-<table class="table mt-5 table-bordered table-striped mb-0" width="100%">
+<table class="table mt-5 table-bordered table-striped mb-0" width="100%" id="grid">
     <thead>
         <tr>
             <th scope="col" class="th-sm">
@@ -63,7 +64,7 @@
 
         @if (Model != null)
         {
-            foreach (var item in Model.Items)
+            foreach (var item in Model.Items.OrderBy(x => x.Name))
             {
                 <tr>
                     <td class="text-center">
@@ -83,10 +84,10 @@
                     </td>
 
                     <td class="text-center">
-                        <a asp-action="Edit" asp-route-id="@item.Id"><i class="fas fa-edit fa-lg" title="Editar"></i></a>
+                        <a asp-action="Edit" asp-route-id="@item.Id.ToString()"><i class="fas fa-edit fa-lg" title="Editar"></i></a>
                     </td>
                     <td class="text-center">
-                        <a asp-action="Delete" asp-route-id="@item.Id" class="text-danger ml-1" onclick="return confirm('Confirmar exclusão?')"><i class="fa fa-eraser fa-lg" title="Excluir Livro"></i></a>
+                        <a asp-action="Delete" asp-route-id="@item.Id.ToString()" class="text-danger ml-1" onclick="return confirm('Confirmar exclusão?')"><i class="fa fa-eraser fa-lg" title="Excluir Livro"></i></a>
                     </td>
                 </tr>
             }

@@ -20,3 +20,5 @@ C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Infra\obj\Debug\netcoreapp2.
 C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Infra\obj\Debug\netcoreapp2.2\HBooks.Infra.csproj.CopyComplete
 C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Infra\obj\Debug\netcoreapp2.2\HBooks.Infra.dll
 C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Infra\obj\Debug\netcoreapp2.2\HBooks.Infra.pdb
+C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Infra\bin\Debug\netcoreapp2.2\HBooks.CrossCutting.dll
+C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Infra\bin\Debug\netcoreapp2.2\HBooks.CrossCutting.pdb

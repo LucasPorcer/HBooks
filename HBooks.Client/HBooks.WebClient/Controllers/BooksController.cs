@@ -44,9 +44,19 @@ namespace HBooks.WebClient.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult Edit(int id)
+        public IActionResult Edit(string id)
         {
-            return View(_service.GetById(id));
+            decimal bookId = 0;
+
+            if (!string.IsNullOrEmpty(id))
+            {
+                bookId = Convert.ToDecimal(id);
+                return View(_service.GetById(bookId));
+            }
+            else
+            {
+                return RedirectToAction("Index");
+            }
         }
 
 
@@ -63,13 +73,24 @@ namespace HBooks.WebClient.Controllers
         }
 
 
-        public IActionResult Delete(int id)
+        public IActionResult Delete(string id)
         {
-            var objToDelete = _service.GetById((decimal)id);
+            decimal bookId = 0;
 
-            _service.Delete(objToDelete);
+            if (!string.IsNullOrEmpty(id))
+            {
+                bookId = Convert.ToDecimal(id);
 
-            return RedirectToAction(nameof(Index));
+                var objToDelete = _service.GetById(bookId);
+
+                _service.Delete(objToDelete);
+
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                return RedirectToAction("Index");
+            }
         }
 
     }

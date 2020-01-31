@@ -4734,6 +4734,16 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "HBooks.CrossCutting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/HBooks.CrossCutting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HBooks.CrossCutting.dll": {}
+        }
+      },
       "HBooks.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
@@ -4752,6 +4762,7 @@
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
           "AutoMapper": "9.0.0",
+          "HBooks.CrossCutting": "1.0.0",
           "HBooks.Domain": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
           "System.ComponentModel.Annotations": "4.7.0",
@@ -12964,6 +12975,11 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "HBooks.CrossCutting/1.0.0": {
+      "type": "project",
+      "path": "../HBooks.CrossCutting/HBooks.CrossCutting.csproj",
+      "msbuildProject": "../HBooks.CrossCutting/HBooks.CrossCutting.csproj"
     },
     "HBooks.Domain/1.0.0": {
       "type": "project",

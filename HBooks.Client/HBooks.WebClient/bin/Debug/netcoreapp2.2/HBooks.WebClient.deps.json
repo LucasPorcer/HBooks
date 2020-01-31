@@ -434,6 +434,14 @@
           "System.Runtime.Handles": "4.3.0"
         }
       },
+      "HBooks.CrossCutting/1.0.0": {
+        "runtime": {
+          "HBooks.CrossCutting.dll": {}
+        },
+        "compile": {
+          "HBooks.CrossCutting.dll": {}
+        }
+      },
       "HBooks.Domain/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "12.0.3"
@@ -448,6 +456,7 @@
       "HBooks.Infra/1.0.0": {
         "dependencies": {
           "AutoMapper": "9.0.0",
+          "HBooks.CrossCutting": "1.0.0",
           "HBooks.Domain": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
           "System.ComponentModel.Annotations": "4.7.0",
@@ -3805,6 +3814,11 @@
       "sha512": "sha512-qOu+hDwFwoZPbzPvwut2qATe3ygjeQBDQj91xlsaqGFQUI5i4ZnZb8yyQuLGpDGivEPIt8EJkd1BVzVoP31FXA==",
       "path": "system.net.primitives/4.3.0",
       "hashPath": "system.net.primitives.4.3.0.nupkg.sha512"
+    },
+    "HBooks.CrossCutting/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "HBooks.Domain/1.0.0": {
       "type": "project",
