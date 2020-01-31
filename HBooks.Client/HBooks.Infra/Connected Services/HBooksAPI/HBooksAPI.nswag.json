@@ -1,0 +1,209 @@
+﻿{
+  "swagger": "2.0",
+  "info": {
+    "title": "BOOKS API V1",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/v1/books/GetAllBoks": {
+      "get": {
+        "tags": [
+          "Books"
+        ],
+        "operationId": "ApiV{versionBooksGetAllBoksGet",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/BookObject"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/books/GetById": {
+      "get": {
+        "tags": [
+          "Books"
+        ],
+        "operationId": "ApiV{versionBooksGetByIdGet",
+        "parameters": [
+          {
+            "type": "number",
+            "name": "bookId",
+            "in": "query",
+            "format": "double"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v1/books/InserBook": {
+      "post": {
+        "tags": [
+          "Books"
+        ],
+        "operationId": "ApiV{versionBooksInserBookPost",
+        "consumes": [
+          "application/json-patch+json",
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/BookObject"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ResponseObject"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/books/UpdateBook": {
+      "put": {
+        "tags": [
+          "Books"
+        ],
+        "operationId": "ApiV{versionBooksUpdateBookPut",
+        "consumes": [
+          "application/json-patch+json",
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/BookObject"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ResponseObject"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/books/DeleteBook": {
+      "delete": {
+        "tags": [
+          "Books"
+        ],
+        "operationId": "ApiV{versionBooksDeleteBookDelete",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "type": "number",
+            "name": "idBook",
+            "in": "query",
+            "format": "double"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ResponseObject"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "BookObject": {
+      "type": "object",
+      "required": [
+        "name",
+        "shortDescription",
+        "genre",
+        "qty",
+        "qtyRented"
+      ],
+      "properties": {
+        "id": {
+          "type": "number",
+          "format": "double"
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "shortDescription": {
+          "type": "string",
+          "maxLength": 150
+        },
+        "genre": {
+          "type": "string",
+          "maxLength": 50
+        },
+        "rentalPrice": {
+          "type": "number",
+          "format": "double"
+        },
+        "qty": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "qtyRented": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "ResponseObject": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

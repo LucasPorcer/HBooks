@@ -1,0 +1,5 @@
+C:\Users\MAIS\Documents\TesteHbsis\HBooks.Domain\bin\Debug\netcoreapp3.0\HBooks.Domain.deps.json
+C:\Users\MAIS\Documents\TesteHbsis\HBooks.Domain\bin\Debug\netcoreapp3.0\HBooks.Domain.dll
+C:\Users\MAIS\Documents\TesteHbsis\HBooks.Domain\obj\Debug\netcoreapp3.0\HBooks.Domain.csprojAssemblyReference.cache
+C:\Users\MAIS\Documents\TesteHbsis\HBooks.Domain\obj\Debug\netcoreapp3.0\HBooks.Domain.AssemblyInfoInputs.cache
+C:\Users\MAIS\Documents\TesteHbsis\HBooks.Domain\obj\Debug\netcoreapp3.0\HBooks.Domain.AssemblyInfo.cs

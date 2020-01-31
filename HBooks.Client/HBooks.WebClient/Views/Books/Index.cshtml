@@ -1,0 +1,68 @@
+﻿@model HBooks.WebClient.Models.BookViewModel
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<p>
+
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.ShortDescription)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Genre)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Qty)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.QtyRented)
+            </th>
+
+            <th scope="col">
+                @Html.ActionLink("Adicionar", "Create", null, new { @class = "btn btn-primary" })
+                @*<a asp-action="Edit" asp-route-id="1">Oi</a>*@
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @if (Model != null)
+        {
+            foreach (var item in Model.Items)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayNameFor(model => model.ShortDescription)
+                    </td>
+                    <td>
+                        @Html.DisplayNameFor(model => model.Genre)
+                    </td>
+                    <td>
+                        @Html.DisplayNameFor(model => model.Qty)
+                    </td>
+                    <td>
+                        @Html.DisplayNameFor(model => model.QtyRented)
+                    </td>
+
+                    <td>
+                        <a href="@Url.Action("Delete", "Users", new { id = item.Id })" class="settings" title="Settings" data-toggle="tooltip" onClick="return confirm('Deseja Deletar este livro?');">Deletar</a>
+                        @Html.ActionLink("Editar", "Edit", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+
+        }
+    </tbody>
+</table>
