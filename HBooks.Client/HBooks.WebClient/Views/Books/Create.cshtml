@@ -28,7 +28,7 @@
                 <div class="form-group">
 
                     <label asp-for="ShortDescription" class="control-label"></label>
-                    <input asp-for="ShortDescription" class="form-control" autocomplete="off" required  />
+                    <input asp-for="ShortDescription" class="form-control" autocomplete="off" required />
                     <span asp-validation-for="ShortDescription" class="text-danger"></span>
                 </div>
 
@@ -64,6 +64,30 @@
             </div>
         </div>
     </div>
+
+    @if (ViewBag.Error != null)
+    {
+
+        <div class="modal" tabindex="-1" role="dialog" id="errorModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Ops, ocorreu um erro:</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>@ViewBag.Error.ToString()</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $('#errorModal').modal({backdrop: false});
+        </script>
+    }
 
 }
 

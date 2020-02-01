@@ -33,74 +33,101 @@
 </div>
 
 
+<div class="table-responsive">
 
-<table class="table mt-5 table-bordered table-striped mb-0" width="100%" id="grid">
-    <thead>
-        <tr>
-            <th scope="col" class="th-sm">
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th scope="col" class="th-sm">
-                @Html.DisplayNameFor(model => model.ShortDescription)
-            </th>
-            <th scope="col" class="th-sm">
-                @Html.DisplayNameFor(model => model.Genre)
-            </th>
-            <th scope="col" class="th-sm">
-                @Html.DisplayNameFor(model => model.Qty)
-            </th>
-            <th scope="col" class="th-sm">
-                @Html.DisplayNameFor(model => model.QtyRented)
-            </th>
+    <table class="table mt-5 table-bordered table-striped mb-0" width="100%" id="grid">
+        <thead>
+            <tr>
+                <th scope="col" class="th-sm">
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th scope="col" class="th-sm">
+                    @Html.DisplayNameFor(model => model.ShortDescription)
+                </th>
+                <th scope="col" class="th-sm">
+                    @Html.DisplayNameFor(model => model.Genre)
+                </th>
+                <th scope="col" class="th-sm">
+                    @Html.DisplayNameFor(model => model.Qty)
+                </th>
+                <th scope="col" class="th-sm">
+                    @Html.DisplayNameFor(model => model.QtyRented)
+                </th>
 
-            <th scope="col" class="th-sm">
-                @Html.DisplayNameFor(model => model.QtyAvaliable)
-            </th>
+                <th scope="col" class="th-sm">
+                    @Html.DisplayNameFor(model => model.QtyAvaliable)
+                </th>
 
-            <th scope="col" class="th-sm text-center" colspan="2">
-                <a asp-action="Create"><i class="fas fa-book"></i> Novo Cadastro</a>
-                @*@Html.ActionLink("Adicionar Novo Livro", "Create", null, new { @class = "btn btn-primary" })*@
-            </th>
-
+                <th scope="col" class="th-sm text-center" colspan="2">
+                    <a asp-action="Create"><i class="fas fa-book"></i> Novo Cadastro</a>
+                </th>
 
 
-        </tr>
-    </thead>
-    <tbody id="booksGrid">
 
-        @if (Model != null)
-        {
-            foreach (var item in Model.Items.OrderBy(x => x.Name))
+            </tr>
+        </thead>
+        <tbody id="booksGrid">
+
+            @if (Model != null)
             {
-                <tr>
-                    <td class="text-center">
-                        @Html.DisplayFor(modelItem => item.Name)
-                    </td>
-                    <td class="text-center">
-                        @Html.DisplayFor(model => item.ShortDescription)
-                    </td>
-                    <td class="text-center">
-                        @Html.DisplayFor(model => item.Genre)
-                    </td>
-                    <td class="text-center">
-                        @Html.DisplayFor(model => item.Qty)
-                    </td>
-                    <td class="text-center">
-                        @Html.DisplayFor(model => item.QtyRented)
-                    </td>
-                    <td class="text-center">
-                        @Html.DisplayFor(model => item.QtyAvaliable)
-                    </td>
+                foreach (var item in Model.Items.OrderBy(x => x.Name))
+                {
+                    <tr>
+                        <td class="text-center">
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td class="text-center">
+                            @Html.DisplayFor(model => item.ShortDescription)
+                        </td>
+                        <td class="text-center">
+                            @Html.DisplayFor(model => item.Genre)
+                        </td>
+                        <td class="text-center">
+                            @Html.DisplayFor(model => item.Qty)
+                        </td>
+                        <td class="text-center">
+                            @Html.DisplayFor(model => item.QtyRented)
+                        </td>
+                        <td class="text-center">
+                            @Html.DisplayFor(model => item.QtyAvaliable)
+                        </td>
 
-                    <td class="text-center">
-                        <a asp-action="Edit" asp-route-id="@item.Id.ToString()"><i class="fas fa-edit fa-lg" title="Editar"></i></a>
-                    </td>
-                    <td class="text-center">
-                        <a asp-action="Delete" asp-route-id="@item.Id.ToString()" class="text-danger ml-1" onclick="return confirm('Confirmar exclusão?')"><i class="fa fa-eraser fa-lg" title="Excluir Livro"></i></a>
-                    </td>
-                </tr>
+                        <td class="text-center">
+                            <a asp-action="Edit" asp-route-id="@item.Id.ToString()"><i class="fas fa-edit fa-lg" title="Editar"></i></a>
+                        </td>
+                        <td class="text-center">
+                            <a asp-action="Delete" asp-route-id="@item.Id.ToString()" class="text-danger ml-1" onclick="return confirm('Confirmar exclusão?')"><i class="fa fa-eraser fa-lg" title="Excluir Livro"></i></a>
+                        </td>
+                    </tr>
+                }
             }
+        </tbody>
+    </table>
 
-        }
-    </tbody>
-</table>
+</div>
+
+@if (ViewBag.Error != null)
+{
+
+    <div class="modal" tabindex="-1" role="dialog" id="errorModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ops, ocorreu um erro:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>@ViewBag.Error.ToString()</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('#errorModal').modal({ backdrop: false });
+    </script>
+}
+
+

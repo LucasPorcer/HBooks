@@ -60,7 +60,6 @@ C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.WebClient\obj\Debug\netcorea
 C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.WebClient\obj\Debug\netcoreapp2.2\Razor\Views\Books\Create.cshtml.g.cs
 C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.WebClient\obj\Debug\netcoreapp2.2\Razor\Views\Books\Edit.cshtml.g.cs
 C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.WebClient\obj\Debug\netcoreapp2.2\Razor\Views\Books\Index.cshtml.g.cs
-C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.WebClient\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.WebClient\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.WebClient\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.WebClient\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
