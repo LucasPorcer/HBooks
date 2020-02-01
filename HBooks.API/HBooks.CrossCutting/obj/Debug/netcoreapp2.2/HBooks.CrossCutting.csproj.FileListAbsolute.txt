@@ -1,0 +1,8 @@
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\HBooks.CrossCutting\bin\Debug\netcoreapp2.2\HBooks.CrossCutting.deps.json
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\HBooks.CrossCutting\bin\Debug\netcoreapp2.2\HBooks.CrossCutting.dll
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\HBooks.CrossCutting\bin\Debug\netcoreapp2.2\HBooks.CrossCutting.pdb
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\HBooks.CrossCutting\obj\Debug\netcoreapp2.2\HBooks.CrossCutting.csprojAssemblyReference.cache
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\HBooks.CrossCutting\obj\Debug\netcoreapp2.2\HBooks.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\HBooks.CrossCutting\obj\Debug\netcoreapp2.2\HBooks.CrossCutting.AssemblyInfo.cs
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\HBooks.CrossCutting\obj\Debug\netcoreapp2.2\HBooks.CrossCutting.dll
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\HBooks.CrossCutting\obj\Debug\netcoreapp2.2\HBooks.CrossCutting.pdb

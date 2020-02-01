@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HBooks.CrossCutting\HBooks.CrossCutting.csproj" />
+    <ProjectReference Include="..\HBooks.Domain\HBooks.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

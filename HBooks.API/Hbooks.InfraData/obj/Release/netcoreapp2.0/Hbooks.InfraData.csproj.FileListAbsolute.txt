@@ -1,0 +1,15 @@
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\Hbooks.InfraData\bin\Release\netcoreapp2.0\Hbooks.InfraData.deps.json
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\Hbooks.InfraData\bin\Release\netcoreapp2.0\Hbooks.InfraData.dll
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\Hbooks.InfraData\bin\Release\netcoreapp2.0\Hbooks.InfraData.pdb
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\Hbooks.InfraData\bin\Release\netcoreapp2.0\HBooks.CrossCutting.dll
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\Hbooks.InfraData\bin\Release\netcoreapp2.0\HBooks.Domain.dll
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\Hbooks.InfraData\bin\Release\netcoreapp2.0\HBooks.Infra.dll
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\Hbooks.InfraData\bin\Release\netcoreapp2.0\HBooks.Domain.pdb
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\Hbooks.InfraData\bin\Release\netcoreapp2.0\HBooks.Infra.pdb
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\Hbooks.InfraData\bin\Release\netcoreapp2.0\HBooks.CrossCutting.pdb
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\Hbooks.InfraData\obj\Release\netcoreapp2.0\Hbooks.InfraData.csprojAssemblyReference.cache
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\Hbooks.InfraData\obj\Release\netcoreapp2.0\Hbooks.InfraData.AssemblyInfoInputs.cache
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\Hbooks.InfraData\obj\Release\netcoreapp2.0\Hbooks.InfraData.AssemblyInfo.cs
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\Hbooks.InfraData\obj\Release\netcoreapp2.0\Hbooks.InfraData.csproj.CopyComplete
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\Hbooks.InfraData\obj\Release\netcoreapp2.0\Hbooks.InfraData.dll
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\Hbooks.InfraData\obj\Release\netcoreapp2.0\Hbooks.InfraData.pdb

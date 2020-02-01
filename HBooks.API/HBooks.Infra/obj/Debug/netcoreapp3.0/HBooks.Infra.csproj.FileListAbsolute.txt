@@ -1,0 +1,13 @@
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\HBooks.Infra\bin\Debug\netcoreapp3.0\HBooks.Infra.deps.json
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\HBooks.Infra\bin\Debug\netcoreapp3.0\HBooks.Infra.dll
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\HBooks.Infra\bin\Debug\netcoreapp3.0\HBooks.Infra.pdb
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\HBooks.Infra\obj\Debug\netcoreapp3.0\HBooks.Infra.csprojAssemblyReference.cache
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\HBooks.Infra\obj\Debug\netcoreapp3.0\HBooks.Infra.AssemblyInfoInputs.cache
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\HBooks.Infra\obj\Debug\netcoreapp3.0\HBooks.Infra.AssemblyInfo.cs
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\HBooks.Infra\obj\Debug\netcoreapp3.0\HBooks.Infra.dll
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\HBooks.Infra\obj\Debug\netcoreapp3.0\HBooks.Infra.pdb
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\HBooks.Infra\bin\Debug\netcoreapp3.0\HBooks.CrossCutting.dll
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\HBooks.Infra\bin\Debug\netcoreapp3.0\HBooks.Domain.dll
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\HBooks.Infra\bin\Debug\netcoreapp3.0\HBooks.CrossCutting.pdb
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\HBooks.Infra\bin\Debug\netcoreapp3.0\HBooks.Domain.pdb
+C:\Users\MAIS\Documents\TesteHbsis\Hbooks.API\HBooks.Infra\obj\Debug\netcoreapp3.0\HBooks.Infra.csproj.CopyComplete
