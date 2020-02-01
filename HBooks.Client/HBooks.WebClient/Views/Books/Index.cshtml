@@ -20,7 +20,7 @@
 </script>
 
 <div class="text-center">
-    <h1 class="display-4">Inventário de Livros</h1>
+    <h1 class="display-4">Inventário de Livros <i class="fas fa-book"></i><br /></h1>
 </div>
 
 
@@ -53,11 +53,17 @@
                 @Html.DisplayNameFor(model => model.QtyRented)
             </th>
 
-            <th scope="col" class="th-sm text-center">
-                @Html.ActionLink("Adicionar", "Create", null, new { @class = "btn btn-primary" })
-            </th>
             <th scope="col" class="th-sm">
+                @Html.DisplayNameFor(model => model.QtyAvaliable)
             </th>
+
+            <th scope="col" class="th-sm text-center" colspan="2">
+                <a asp-action="Create"><i class="fas fa-book"></i> Novo Cadastro</a>
+                @*@Html.ActionLink("Adicionar Novo Livro", "Create", null, new { @class = "btn btn-primary" })*@
+            </th>
+
+
+
         </tr>
     </thead>
     <tbody id="booksGrid">
@@ -71,16 +77,19 @@
                         @Html.DisplayFor(modelItem => item.Name)
                     </td>
                     <td class="text-center">
-                        @Html.DisplayNameFor(model => model.ShortDescription)
+                        @Html.DisplayFor(model => item.ShortDescription)
                     </td>
                     <td class="text-center">
-                        @Html.DisplayNameFor(model => model.Genre)
+                        @Html.DisplayFor(model => item.Genre)
                     </td>
                     <td class="text-center">
-                        @Html.DisplayNameFor(model => model.Qty)
+                        @Html.DisplayFor(model => item.Qty)
                     </td>
                     <td class="text-center">
-                        @Html.DisplayNameFor(model => model.QtyRented)
+                        @Html.DisplayFor(model => item.QtyRented)
+                    </td>
+                    <td class="text-center">
+                        @Html.DisplayFor(model => item.QtyAvaliable)
                     </td>
 
                     <td class="text-center">

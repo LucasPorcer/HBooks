@@ -32,7 +32,7 @@ namespace HBooks.WebClient.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Id,Name,Name,ShortDescription,Genre,Qty,QtyRented")] BookObject book)
+        public IActionResult Create([Bind("Name,Name,ShortDescription,Genre,Qty,QtyRented")] BookObject book)
         {
             if (!ModelState.IsValid)
             {

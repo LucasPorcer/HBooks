@@ -6,3 +6,11 @@ C:\Users\MAIS\Documents\TesteHbsis\HBooks.Domain\bin\Debug\netcoreapp2.2\HBooks.
 C:\Users\MAIS\Documents\TesteHbsis\HBooks.Domain\bin\Debug\netcoreapp2.2\HBooks.Domain.pdb
 C:\Users\MAIS\Documents\TesteHbsis\HBooks.Domain\obj\Debug\netcoreapp2.2\HBooks.Domain.dll
 C:\Users\MAIS\Documents\TesteHbsis\HBooks.Domain\obj\Debug\netcoreapp2.2\HBooks.Domain.pdb
+C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Domain\bin\Debug\netcoreapp2.2\HBooks.Domain.deps.json
+C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Domain\bin\Debug\netcoreapp2.2\HBooks.Domain.dll
+C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Domain\bin\Debug\netcoreapp2.2\HBooks.Domain.pdb
+C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Domain\obj\Debug\netcoreapp2.2\HBooks.Domain.csprojAssemblyReference.cache
+C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Domain\obj\Debug\netcoreapp2.2\HBooks.Domain.AssemblyInfoInputs.cache
+C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Domain\obj\Debug\netcoreapp2.2\HBooks.Domain.AssemblyInfo.cs
+C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Domain\obj\Debug\netcoreapp2.2\HBooks.Domain.dll
+C:\Users\MAIS\Documents\HBooks\HBooks.Client\HBooks.Domain\obj\Debug\netcoreapp2.2\HBooks.Domain.pdb

@@ -21,11 +21,22 @@ namespace HBooks.WebClient.Models
         [DisplayName("Gênero")]
         public string Genre { get; set; }
 
-        [DisplayName("Quantidade")]
+        [DisplayName("Qtd")]
         public int Qty { get; set; }
 
-        [DisplayName("Quantidade Alugada")]
+        [DisplayName("Qtd. Alugada")]
         public int QtyRented { get; set; }
+
+        [DisplayName("Qtd. Disponível")]
+        public int QtyAvaliable => GetQtyAvaliable();
+
+        private int GetQtyAvaliable()
+        {
+            if (Qty != 0 && (Qty > QtyRented))
+                return (Qty - QtyRented);
+
+            return 0;
+        }
 
         public BookViewModel(List<BookObject> items)
         {
